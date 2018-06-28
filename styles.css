@@ -3,11 +3,33 @@ body, html {
     height: 100%;
     margin: 0;
 }
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#nav-bar ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#nav-bar ul li a{
+    
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;  
+    
+}
 
 #home {
     background: url('images/main.jpg') no-repeat center fixed;
     height: 100%;
     background-size: cover;
+}
+.brand{
+    width: 50vw;
 }
 
 .brand img {
@@ -17,15 +39,41 @@ body, html {
 li {
     list-style: none;
 }
+ul{
+    padding: 0;
+}
 
 a {
     text-decoration: none;
+}
+.main-view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-info{
+    width: 400px;
+    padding: 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    background: #070857;
+    opacity: 0.8;
+ 
+}
+
+span{
+    color: #db0d0d;
+    font-weight: bold;
 }
 
 .view-gallery-btn {
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-top: 80px;
 }
 
 .view-gallery-btn a {
@@ -44,4 +92,60 @@ a {
     color: #000;
     border: 1px solid #444;
     opacity: 0.7;
+}
+
+#about{
+    margin: 20px;
+    padding: 0 10px 0 10px;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.about-description{
+    display: flex;
+    justify-content: space-between;
+}
+.about-description #para{
+  
+}
+#rate{
+    margin: 20px 0 20px 0;
+    background: #e3eeca;
+    padding: 20px;
+    background: url('images/door.jpg') no-repeat center fixed;
+    background-size: cover;
+
+
+}
+#rate h2{
+    margin-top: 0;
+    color: #051a8f;
+}
+.rate-table img{
+    width: 200px;
+}
+.rate-table{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.rate-table a{
+    padding: 6px;
+    border: 1px solid #fff;
+    background: #caecee;
+}
+.rate-table h3{
+    color: #3301a7;
+    margin-top: 0;
+    background: #fff;
+    padding: 10px;
+}
+
+.card{
+    background: #dddbdb;
+    padding: 16px;
+    border-radius: 5px;
+    text-align: center;
+
 }
