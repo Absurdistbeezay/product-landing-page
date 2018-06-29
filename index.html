@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Lato|Dancing+Script" rel="stylesheet">
+    <!-- FCC TESTER    -->
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
     <title>Hotel Bliss</title>
 </head>
 
@@ -19,13 +21,13 @@
             <nav id="nav-bar">
                 <ul>
                     <li>
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">About Us</a>
+                        <a href="#about" class="nav-link">About Us</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Our Rate</a>
+                        <a href="#rate" class="nav-link">Our Rate</a>
                     </li>
                 </ul>
             </nav>
@@ -52,8 +54,8 @@
                     placeat velit magnam natus, voluptas quo dicta, esse similique ullam nobis laboriosam aut sed itaque
                     expedita mollitia dolorem. Quo magnam illo minima voluptate commodi. Veniam reprehenderit quidem ullam
                     tenetur, facere impedit porro.</p>
-                    <div id="video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/9s9Em9k0WCE" frameborder="0" allow="autoplay; encrypted-media"
+                    <div>
+                            <iframe id="video" width="250" height="150" src="https://www.youtube.com/embed/9s9Em9k0WCE" frameborder="0" allow="autoplay; encrypted-media"
                                 allowfullscreen></iframe>
                     </div>
             </div>
@@ -75,8 +77,8 @@
                     <h3>Premium Suite</h3>
                     <img src="images/premium.jpg" alt="premium room">
                     <ul>
-                            <li>$99 per night</li>
-                            <li>$2000 per month</li>
+                            <li>$299 per night</li>
+                            <li>$4000 per month</li>
                         </ul>
                         <a href="#">Book Now</a>
                 </div>
@@ -84,17 +86,29 @@
                     <h3>Super Luxury Suite</h3>
                     <img src="images/super-luxury.jpg" alt="super-luxury room">
                     <ul>
-                            <li>$99 per night</li>
-                            <li>$2000 per month</li>
+                            <li>$599 per night</li>
+                            <li>$10000 per month</li>
                         </ul>
                         <a href="#">Book Now</a>
                 </div>
             </div>
         </section>
 
+        <section id="subscribe-section">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <h3>Subscribe Us for Special Offer</h3>
+                <div>
+                    <input name="email" type="email" id="email" placeholder="Your email address.." required>
+                </div> 
+                <div class="subscribe-btn">
+                    <input type="submit" id="submit" value="Subscribe">
+                </div>              
+            </form>
+        </section>
+
         <section id="contact">
             <footer>
-                Copyright 2018, Hotel Bliss
+             Copyright 2018, Hotel Bliss.
             </footer>
         </section>
     </div>

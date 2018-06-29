@@ -8,6 +8,16 @@ body, html {
     flex-wrap: wrap;
     align-items: center;
 }
+
+#nav-bar{
+    position: fixed;
+    overflow: hidden;
+    top: 4px;
+    right: 50px;
+    background: #444;
+    z-index: 1;
+    opacity: .8;
+}
 #nav-bar ul{
     display: flex;
     flex-wrap: wrap;
@@ -92,6 +102,7 @@ span{
     color: #000;
     border: 1px solid #444;
     opacity: 0.7;
+    transition: 1s;
 }
 
 #about{
@@ -103,9 +114,6 @@ span{
 .about-description{
     display: flex;
     justify-content: space-between;
-}
-.about-description #para{
-  
 }
 #rate{
     margin: 20px 0 20px 0;
@@ -148,4 +156,53 @@ span{
     border-radius: 5px;
     text-align: center;
 
+}
+
+#subscribe-section{
+    margin-bottom: 20px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email{
+    width: 300px;
+    height: 24px;
+    margin-bottom: 20px;
+}
+
+#submit{
+    background: #3301a7;
+    color: #fff;
+    padding: 6px;
+    border: 1px #3301a7 solid;
+}
+#submit:hover{
+    cursor: pointer;
+    background: #4a0adf;
+}
+
+footer{
+    background: #ad0505;
+    color: #fff;
+    padding: 4px;
+    margin-bottom: 2px;
+}
+
+@media (max-width: 900px){
+    .rate-table{
+        flex-direction: column;
+    }
+    .card{
+        margin-bottom: 4px;
+        width: 300px;
+    }
+}
+@media (max-width: 500px){
+    .about-description{
+        flex-direction: column;
+    }
 }
